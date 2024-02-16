@@ -18,6 +18,9 @@ public class FruitRunner {
      a.Details();
      a.Details();
 
+     Grape g=new Grape(80,1,"white");
+     g.Details();
+
 
 
     }

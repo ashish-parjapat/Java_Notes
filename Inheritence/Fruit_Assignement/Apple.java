@@ -12,7 +12,7 @@ public class Apple extends Fruit{
     }
 
     public Apple(double price,double qty,String type) {
-        super(price, qty);
+        // super(price, qty);
 
         System.out.println("apple construcotr is working");
         this.type = type;

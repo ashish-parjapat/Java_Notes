@@ -69,6 +69,38 @@ public Mobile(){
 
     }
 
+
+    public void removeSim1(){
+        if(sim1.Company!=null){
+            sim1.Company=null;
+
+        }
+      
+    }
+
+    public void removeSim2(){
+        if(sim2.Company!=null){
+            sim2.Company=null;
+
+        }
+      
+    }
+
+    public void  ChangeSim2to1(){
+        if(sim2.Company!=null){
+            sim1.Company=sim2.Company;
+            sim2.Company=null;
+        }
+    }
+
+    public void  ChangeSim1to2(){
+        if(sim1.Company!=null){
+            sim2.Company=sim1.Company;
+            sim1.Company=null;
+        }
+    }
+
+
     public void PrintDetails(){
         System.out.println("Brand is "+Brand);
         System.out.println("Model is "+Model);

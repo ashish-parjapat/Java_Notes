@@ -2,12 +2,18 @@
  * Vehicle
  */
 public class Vehicle {
-    static{
-        System.out.println("this is static in Vehicle class");
-    }
+    String brand,model;
+    int price=10;
 
-    {
-        System.out.println("this is non static in Vehicle class"); 
+    // public Vehicle(){
+
+    //     System.out.println("this is vehicle constricor");
+
+    // }
+
+    public Vehicle(int price){
+        System.out.println("inside parametized construcot");
+        this.price=price;
     }
 
 
