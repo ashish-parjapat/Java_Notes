@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 /**
  * Bank
  */
 public abstract class Bank {
+   
 
     long AccountNo;
     String Name;
@@ -19,9 +22,9 @@ public abstract class Bank {
         System.out.println("Bank Balance is "+Balance);
     }
 
-    public abstract void Withdrawal();
-    public abstract void Deposit();
-    public abstract void ChangePwd();
+    public abstract void Withdrawal(double amt,int pwd);
+    public abstract void Deposit(double amt);
+    public abstract void ChangePwd(int Opwd,int Npwd);
     public abstract void Details();
 
 
