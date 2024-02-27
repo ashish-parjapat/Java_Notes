@@ -5,8 +5,8 @@ public  class SBI extends Bank {
     Scanner sc=new Scanner(System.in);
     
 
-    public SBI(long AccountNo,String Name,double Balance,int Pwd){
-        super(AccountNo, Name, Balance, Pwd);
+    public SBI(){
+        super();
     }
 
 @Override

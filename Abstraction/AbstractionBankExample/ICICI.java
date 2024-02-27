@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class ICICI extends Bank {
     Scanner sc=new Scanner(System.in);
 
-    public ICICI(long AccountNo,String Name,double Balance,int Pwd){
-        super(AccountNo, Name, Balance, Pwd);
+    public ICICI(){
+        super();
     }
 
     @Override

@@ -4,6 +4,7 @@ import java.util.Scanner;
  * Bank
  */
 public abstract class Bank {
+    Scanner sc=new Scanner(System.in);
    
 
     long AccountNo;
@@ -11,10 +12,17 @@ public abstract class Bank {
     double Balance;
     int Pwd;
 
-    public Bank(long AccountNo,String Name,double Balance,int Pwd){
-        this.AccountNo=AccountNo;
+    public Bank(){
+        this.AccountNo=5859101002728L;
+
+        System.out.println("enter your name");
+        String Name=sc.nextLine();
+        
         this.Name=Name;
-        this.Balance=Balance;
+        this.Balance=1000;
+        System.out.println("Set your password");
+        int Pwd=sc.nextInt();
+      
         this.Pwd=Pwd;
     }
 
