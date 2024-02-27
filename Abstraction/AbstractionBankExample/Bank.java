@@ -18,16 +18,24 @@ public abstract class Bank {
         this.Pwd=Pwd;
     }
 
-    public void ShowBalance(){
-        System.out.println("Bank Balance is "+Balance);
+    public void ShowBalance(int pwd){
+        if(pwd==this.Pwd){
+            System.out.println("Bank Balance is "+Balance);
+
+        }else{
+            System.out.println("Please check your passwprd");
+        }
+        
     }
 
     public abstract void Withdrawal(double amt,int pwd);
     public abstract void Deposit(double amt);
-    public abstract void ChangePwd(int Opwd,int Npwd);
+    public abstract void ChangePwd(int Opwd,int newPwd);
     public abstract void Details();
 
     public abstract void ChangePwdwithOtp();
+
+    public abstract void Transaction();
 
 
 

@@ -10,7 +10,9 @@ public  class SBI extends Bank {
     }
 
 @Override
-    public void ShowBalance(){
+    public void ShowBalance(int pwd){
+    
+
         System.out.println("Balance is"+Balance);
     }
     @Override
@@ -83,6 +85,20 @@ public  class SBI extends Bank {
                 System.out.println("Password chnaged succesfully");
             }else{
                 System.out.println(" please enter the 4 digit password ");
+                newPwd=sc.nextInt();
+                while(newPwd<999 && newPwd>10000){
+                    System.out.println(" please enter the 4 digit password ");
+
+
+                }
+               
+                    this.Pwd=newPwd;
+                    System.out.println("Password chnaged succesfully");
+                
+
+
+
+                
             ChangePwdwithOtp();
 
             }
@@ -103,6 +119,74 @@ public  class SBI extends Bank {
 
 
     }
+
+
+    public void Transaction(){
+
+        System.out.println("Press 1 to check balance");
+        System.out.println("Press 2 for withdraw");
+        System.out.println("Press 3 for deposit");
+        System.out.println("Press 4 for chnage Pwd");
+        System.out.println("Press 5 for details");
+        System.out.println("press 6 for exit");
+
+
+int choice=sc.nextInt();
+if(choice==1){
+    System.out.println("Enter the password");
+    int pwd=sc.nextInt();
+    ShowBalance(pwd);
+    Transaction();
+
+}else if(choice==2){
+    System.out.println("enter the pwd");
+    int pwd=sc.nextInt();
+    System.out.println("enter the ammoyunt");
+    double amt=sc.nextDouble();
+    Withdrawal(amt, pwd);
+    Transaction();
+
+
+}
+else if(choice==3){
+    System.out.println("enter the ammount to be depoistee");
+    double amt=sc.nextDouble();
+    Deposit(amt);
+    Transaction();
+
+}else if(choice==4){
+    System.out.println("Press 1 to chnage the password with old password");
+    System.out.println("Press 2 to chnage the password with  otp");
+    int passwordchoice=sc.nextInt();
+    if(passwordchoice==1){
+
+        System.out.println("enter old passprd");
+        int oldPass=sc.nextInt();
+        System.out.println("enter new Password");
+        int newPass=sc.nextInt();
+        ChangePwd(oldPass,newPass);
+        Transaction();
+        
+    }else{
+        ChangePwdwithOtp();
+        Transaction();
+    }
+
+}else if(choice==5){
+    Details();
+    Transaction();
+}
+else{
+    return;
+}
+
+
+
+
+
+    
+    }
+
 
 
 
