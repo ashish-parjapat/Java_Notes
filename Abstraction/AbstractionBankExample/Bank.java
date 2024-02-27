@@ -27,6 +27,8 @@ public abstract class Bank {
     public abstract void ChangePwd(int Opwd,int Npwd);
     public abstract void Details();
 
+    public abstract void ChangePwdwithOtp();
+
 
 
 

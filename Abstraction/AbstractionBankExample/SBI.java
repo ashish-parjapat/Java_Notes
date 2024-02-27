@@ -1,4 +1,8 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public  class SBI extends Bank {
+    Scanner sc=new Scanner(System.in);
     
 
     public SBI(long AccountNo,String Name,double Balance,int Pwd){
@@ -57,6 +61,46 @@ public  class SBI extends Bank {
     public void Details(){
        System.out.println("Your Balnance is "+this.Balance);
        System.out.println("Account number is "+this.AccountNo);
+
+    }
+
+    @Override
+
+
+    public void ChangePwdwithOtp(){
+        Random r =new Random();
+        int otp= r.nextInt(899999)+1000;
+
+        System.out.println("Your otp is "+otp);
+        System.out.println("Enter otp");
+        int verifyotp= sc.nextInt();
+
+        if(otp==verifyotp){
+            System.out.println("enter your new password");
+            int newPwd=sc.nextInt();
+            if(newPwd<10000 && newPwd>1000){
+                this.Pwd=newPwd;
+                System.out.println("Password chnaged succesfully");
+            }else{
+                System.out.println(" please enter the 4 digit password ");
+            ChangePwdwithOtp();
+
+            }
+        }else{
+            System.out.println("Invalid password");
+            System.out.println("do you want to send the otp gain");
+            System.out.println("Press Y for Yes N for No");
+            char choice=sc.next().charAt(0);
+            if(choice=='Y'||choice=='y'){
+                ChangePwdwithOtp();
+            }else{
+                System.out.println("Try another methiod to chnage the password");
+            }
+        }
+
+        
+
+
 
     }
 
