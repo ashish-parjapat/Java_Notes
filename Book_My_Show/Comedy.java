@@ -1,3 +1,3 @@
-public class Comedy {
+public class Comedy extends bookmyshow {
     
 }

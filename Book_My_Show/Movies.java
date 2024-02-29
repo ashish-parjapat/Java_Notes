@@ -1,3 +1,3 @@
-public class Movies  {
+public class Movies extends bookmyshow {
     
 }

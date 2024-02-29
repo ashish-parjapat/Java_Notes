@@ -12,5 +12,9 @@ public interface IBMS {
 //content method
 
     int Content();
+
+    //Location method
+
+    void Loc(bookmyshow b);
     
 }
