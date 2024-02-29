@@ -7,6 +7,6 @@ public interface IBMS {
 
 
     void Signup();
-    void Login();
+    boolean Login();
     
 }
