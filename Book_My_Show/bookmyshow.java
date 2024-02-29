@@ -89,7 +89,7 @@ public class bookmyshow implements IBMS {
         if(b instanceof Movies){
 
             System.out.println("Enter location");
-            System.out.println("1 for Delhi , 2 for Bangalore , 3 for Kota");
+            System.out.println("1 for Delhi , 2 for Bangalore , 3 for Hyderabad");
 
             int ch=sc.nextInt();
             if(ch==1){
@@ -103,8 +103,9 @@ public class bookmyshow implements IBMS {
             }
             else{
                Loc(b);
-                System.out.println("Selected location is "+ Loc);
+              
             }
+            System.out.println("Selected location is "+ Loc);
 
         }
 
@@ -125,8 +126,9 @@ public class bookmyshow implements IBMS {
         }
         else{
            Loc(b);
-            System.out.println("Selected location is "+ Loc);
+           
         }
+        System.out.println("Selected location is "+ Loc);
 
       }
 
