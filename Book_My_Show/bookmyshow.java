@@ -68,6 +68,20 @@ public class bookmyshow implements IBMS {
        
     }
 
+    //content method
+
+    public int Content(){
+        System.out.println("Enter the choice");
+        System.out.println("1 for movies, 2 for comedy , 3 for live events");
+
+        int ch=sc.nextInt();
+
+
+
+
+        return ch;
+    }
+
     
 
     

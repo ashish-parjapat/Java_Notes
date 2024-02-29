@@ -8,5 +8,9 @@ public interface IBMS {
 
     void Signup();
     boolean Login();
+
+//content method
+
+    int Content();
     
 }
