@@ -136,6 +136,21 @@ public class BookMyShow implements IBMS {
     }
 
 
+    @Override
+    public void FullBooking() {
+        int x=Content();
+        if(x==1){
+            Movies m=new Movies();
+            m.Loc(m);
+            m.MovieSelection();
+            m.SeatSelection();
+            m.Addon();
+            m.GenerateBill();
+        }
+
+    }
+
+
 
     
 

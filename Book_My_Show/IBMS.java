@@ -16,5 +16,8 @@ public interface IBMS {
     //Location method
 
     void Loc(BookMyShow b);
+
+
+    void FullBooking();
     
 }

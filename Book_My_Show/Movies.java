@@ -43,6 +43,7 @@ public void SeatSelection(){
 //Addon methid
 
 public boolean Addon(){
+    // MovieSelection();
     System.out.println("do you want add on press 1 for yes , 2 for no");
     int ch=sc.nextInt();
     if(ch==1){
@@ -148,20 +149,38 @@ public boolean Addon(){
 
 
 public void GenerateBill(){
+   
     System.out.println("Enjoy the movie "+Movie_Name);
     System.out.println("Your seat type is "+Seat_type);
     System.out.println("Your Addon is"+ UserAddonchoice);
     if(UserAddonchoice=="Popcorn"){
-        System.out.println("YOur Quantity is "+Popcorn_qty);
+        if(Popcorn_qty>0){
+            System.out.println("YOur Quantity is "+Popcorn_qty);
+        }
+       
     }
 
    else if(UserAddonchoice=="Coke"){
+
+    if(Coke_qty>0){
         System.out.println("YOur Quantity is "+Coke_qty);
+
+    }
+        
     }else{
-        System.out.println("YOur Quantity is "+ Nacos_qty);
+        if(Coke_qty>0){
+            System.out.println("YOur Quantity is "+ Nacos_qty);
+
+        }
+     
     }
 
-    System.out.println("Your total bill is "+amt);
+    System.out.println("Your total amount of booking  is "+amt);
+
+    System.out.println("Tax                        :"+"5%");
+    System.out.println("Tax amount                    :"+amt*0.05);
+    System.out.println("Convineint fee                 :"+amt*0.1);
+    System.out.println("final payable amount                     "+(amt+(amt*0.05)+(amt*0.1)));
 }
 
 
