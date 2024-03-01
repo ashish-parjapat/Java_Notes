@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * bookmyshow
  */
-public class bookmyshow implements IBMS {
+public class BookMyShow implements IBMS {
     String EmailId,Pwd,Loc;
     Scanner sc=new Scanner(System.in);
 
@@ -84,7 +84,7 @@ public class bookmyshow implements IBMS {
 
     @Override
 
-    public void Loc(bookmyshow b){
+    public void Loc(BookMyShow b){
 
         if(b instanceof Movies){
 

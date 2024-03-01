@@ -1,71 +1,65 @@
-public class Comedy extends bookmyshow {
+public class Comedy extends BookMyShow {
 
-    String Movie_Name;
+    String Comedy_Name;
 
     public void ComedySelection(){
-     if(Loc.equals("Delhi")){
+     if(Loc.equals("Gurugram")){
          System.out.println("enter the movie to watch");
-         System.out.println("Press 1 for fighter , 2 for Animal , 3 for dunki");
+         System.out.println("Press 1 for Bassi, 2 for Vicky gujral" );
  
          int ch=sc.nextInt();
          if(ch==1){
-             Movie_Name="Fighter";
+             Comedy_Name="Bassi";
          }
        else  if(ch==2){
-             Movie_Name="Animal";
+             Comedy_Name="Vicky gujral";
          }
-        else if(ch==3){
-             Movie_Name="Dunki";
-         }
+       
          else{
              ComedySelection();
          }
-         System.out.println("Selected movie is"+ Movie_Name);
+         System.out.println("Selected movie is"+ Comedy_Name);
          
  
          
  
      }
-     else if(Loc.equals("Gurugram")){
+     else if(Loc.equals("Noida")){
  
  
          System.out.println("enter the movie to watch");
-         System.out.println("Press 1 for Salar , 2 for Kgf , 3 for Kantara");
+         System.out.println("Press 1 for Abishek, 2 for Kapil sharma" );
  
          int ch=sc.nextInt();
          if(ch==1){
-             Movie_Name="Salar";
+             Comedy_Name="Abishek";
          }
        else  if(ch==2){
-             Movie_Name="KGF";
+             Comedy_Name="Kapil sharma";
          }
-        else if(ch==3){
-             Movie_Name="KANTARA";
-         }
+       
          else{
              ComedySelection();
          }
-         System.out.println("Selected movie is"+ Movie_Name);
+         System.out.println("Selected movie is"+ Comedy_Name);
      }
  
      else{
          System.out.println("enter the movie to watch");
-         System.out.println("Press 1 for Phuspa , 2 for Bahubali , 3 for RRR");
+         System.out.println("Press 1 for Pappu , 2 Bhupi Baba");
  
          int ch=sc.nextInt();
          if(ch==1){
-             Movie_Name="Phuspa ";
+             Comedy_Name="Pappu ";
          }
        else  if(ch==2){
-             Movie_Name="Bahubali";
+             Comedy_Name="Bhupi Baba";
          }
-        else if(ch==3){
-             Movie_Name="RRR";
-         }
+       
          else{
             ComedySelection();
          }
-         System.out.println("Selected movie is"+ Movie_Name);
+         System.out.println("Selected movie is"+ Comedy_Name);
      }
  
  

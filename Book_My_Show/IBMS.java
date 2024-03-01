@@ -15,6 +15,6 @@ public interface IBMS {
 
     //Location method
 
-    void Loc(bookmyshow b);
+    void Loc(BookMyShow b);
     
 }
